@@ -13,9 +13,9 @@ const HomePage = () => {
 
     useEffect(() => {
         // eslint-disable-next-line
-        // const clientId = async () => {
-             localStorage.setItem("clientId", generateId())
-            // }
+        const clientId = () => {
+             return localStorage.setItem("clientId", generateId())
+            }
       }, [clientId]);
 
 
