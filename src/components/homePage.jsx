@@ -11,15 +11,11 @@ const HomePage = () => {
     const generateId = () => Math.random().toString(36).substring(2, 18);
 
 
-
-        // const el = document.createElement('code');
-
-
     useEffect(() => {
         // eslint-disable-next-line
-        const clientId = async () => {
-            return localStorage.setItem("clientId", generateId())
-            }
+        // const clientId = async () => {
+             localStorage.setItem("clientId", generateId())
+            // }
       }, [clientId]);
 
 
