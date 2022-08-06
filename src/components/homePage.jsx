@@ -13,9 +13,13 @@ const HomePage = () => {
 
     useEffect(() => {
         // eslint-disable-next-line
-        const clientId = () => {
-             return localStorage.setItem("clientId", generateId())
-            }
+        // const clientId = () => {
+            //   window.localStorage.setItem("clientId", generateId())
+            // }
+            const clientId = () => {
+                window.localStorage.setItem("clientId", generateId())
+                }
+
       }, [clientId]);
 
 
